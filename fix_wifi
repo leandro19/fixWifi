@@ -1,0 +1,15 @@
+#!/bin/bash
+
+while true; do 
+
+	sleep 5
+	if ip link | grep " DOWN "
+	then
+		echo "we not in this bitch"
+		rmmod mwifiex_pcie
+		rmmod mwifiex
+		modprobe mwifiex_pcie
+	else
+		echo "we in this bitch"
+	fi
+done
