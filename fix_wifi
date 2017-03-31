@@ -8,6 +8,5 @@ while true; do
 		rmmod mwifiex_pcie
 		rmmod mwifiex
 		modprobe mwifiex_pcie
-	else
 	fi
 done
