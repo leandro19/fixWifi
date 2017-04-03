@@ -3,7 +3,7 @@
 while true; do 
 
 	sleep 5
-	if ip link | grep " DOWN "
+	if ip link | grep "CARRIER"
 	then
 		rmmod mwifiex_pcie
 		rmmod mwifiex
